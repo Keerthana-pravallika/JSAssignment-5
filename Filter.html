@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment - Filter</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let num ,arr=[];
+        num = prompt("Enter a positive number :");
+        while(num > 0)
+        {
+            num = prompt("Enter a positive number :");
+            arr.push(num);
+        }
+        let odd = arr.filter(el=>el%2==1);
+        let oddcubes = arr.filter(el=>el%2==1).map(el=>(el*el*el));
+        console.log(oddcubes);
+    </script>
+    
+</body>
+</html>
